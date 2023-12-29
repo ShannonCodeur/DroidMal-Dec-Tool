@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="left" android:id="@+id/input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内容:"/>
+        <EditText android:layout_gravity="center_horizontal" android:id="@+id/input_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="100dp"/>
+    </LinearLayout>
+    <TextView android:layout_gravity="left" android:id="@+id/input_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:id="@+id/input_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentLeft="true"/>
+        <Button android:id="@+id/input_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

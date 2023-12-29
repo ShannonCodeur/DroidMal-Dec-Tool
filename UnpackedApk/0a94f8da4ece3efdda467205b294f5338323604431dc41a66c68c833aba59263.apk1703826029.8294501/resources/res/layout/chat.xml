@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/form_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="聊天界面"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息内容"/>
+        <EditText android:id="@+id/chat_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="40"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/equip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="选择装备" android:layout_below="@+id/chat_edit" android:layout_alignParentRight="true"/>
+            <Button android:id="@+id/emotion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="选择表情" android:layout_toLeftOf="@+id/equip" android:layout_below="@+id/chat_edit"/>
+            <Button android:id="@+id/send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="发送" android:layout_below="@+id/chat_edit" android:layout_alignParentLeft="true"/>
+            <Button android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="取消" android:layout_toRightOf="@+id/send" android:layout_below="@+id/chat_edit"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/chat_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(不允许发送空消息)"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="频道"/>
+        <RadioGroup android:orientation="vertical" android:id="@+id/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radio_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地区"/>
+            <RadioButton android:id="@+id/radio_world" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="世界"/>
+            <RadioButton android:id="@+id/radio_team" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小队"/>
+            <RadioButton android:id="@+id/radio_guild" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="公会"/>
+        </RadioGroup>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私聊对象:"/>
+        <AutoCompleteTextView android:id="@+id/edit_private" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

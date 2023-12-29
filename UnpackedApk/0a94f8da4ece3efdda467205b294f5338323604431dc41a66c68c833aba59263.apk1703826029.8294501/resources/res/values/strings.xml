@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">MonsterMIDlet!</string>
+    <string name="app_name">灵兽世界OL</string>
+    <string name="wapURL">http://www.joy-game.com/wap</string>
+    <string name="entryUrl">http://117.135.138.183:8345/</string>
+    <string name="version">2.00</string>
+    <string name="channelCode">AJOYGAME</string>
+</resources>
