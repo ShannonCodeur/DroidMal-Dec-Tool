@@ -9,3 +9,6 @@
 ## Packages utiles à installer pour lancer le système
 
 ##### numpy, pandas, scikit-learn, matplotlib, streamlit
+
+## Répertoires à créer avant de commerncer
+#### BenignAPK,   MalwareAPK, UnpackedAPK
